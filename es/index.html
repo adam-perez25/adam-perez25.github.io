@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Pérez Pulgarín</title>
+  <meta name="description" content="Estudiante de Ingeniería Informática en la UAB (IA y algoritmos). Proyectos en Python, C++ y JavaScript. Busco prácticas en Barcelona.">
+  <meta name="theme-color" content="#1f5a3a">
+  <link rel="alternate" hreflang="en" href="https://adam-perez25.github.io/">
+  <link rel="alternate" hreflang="es" href="https://adam-perez25.github.io/es/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#proyectos">Saltar a los proyectos</a>
+
+  <header class="board hero" id="top">
+    <svg class="traces" viewBox="0 0 600 420" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g class="lines">
+        <path d="M600 60 H470 L430 100 V180"/>
+        <path d="M600 120 H500 L470 150 V250 L440 280 H360"/>
+        <path d="M600 200 H540 V330 L500 370 H380"/>
+        <path d="M600 300 H560 L520 260 V210"/>
+        <path d="M600 380 H460 L420 340 V300"/>
+        <path d="M330 0 V40 L370 80 H410"/>
+        <path d="M250 420 V380 L290 340 H330"/>
+      </g>
+      <g class="pads">
+        <circle cx="430" cy="180" r="7"/>
+        <circle cx="360" cy="280" r="7"/>
+        <circle cx="380" cy="370" r="7"/>
+        <circle cx="520" cy="210" r="7"/>
+        <circle cx="420" cy="300" r="7"/>
+        <circle cx="410" cy="80" r="7"/>
+        <circle cx="330" cy="340" r="7"/>
+      </g>
+    </svg>
+
+    <nav class="wrap topnav" aria-label="Secciones">
+      <a class="logo" href="#top">AP</a>
+      <div class="navlinks">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+        <a class="lang" href="../" hreflang="en" lang="en">English</a>
+      </div>
+    </nav>
+
+    <div class="wrap hero-body">
+      <h1>Adam<br>Pérez Pulgarín</h1>
+      <p class="lead">
+        Estudiante de 3.º de Ingeniería Informática en la UAB, en la mención de Computación
+        (IA y algoritmos). Desarrollo servicios backend y herramientas en Python, C++ y JavaScript,
+        y busco prácticas o un trabajo a media jornada en Barcelona, en remoto o híbrido.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#proyectos">Ver mis proyectos</a>
+        <a class="btn" href="https://github.com/adam-perez25" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/adam-perez-pulgarin-26971038b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="wrap block">
+      <h2>Proyectos</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>PDF Toolkit</h3>
+          <p class="tag">Backend</p>
+        </div>
+        <div class="project-body">
+          <p>
+            Una aplicación web para trabajar con documentos desde el navegador: unir, dividir
+            y comprimir PDF, reordenar y girar páginas, convertir imágenes a PDF y viceversa,
+            y pasar archivos de Word, Excel y PowerPoint a PDF.
+          </p>
+          <ul class="stack">
+            <li>Python</li><li>FastAPI</li><li>pypdf</li><li>Ghostscript</li><li>LibreOffice</li><li>Docker</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/adam-perez25/pdf_services" target="_blank" rel="noopener">Código en GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Study Timer</h3>
+          <p class="tag">App de escritorio</p>
+        </div>
+        <div class="project-body">
+          <p>
+            Un temporizador de estudio tipo pomodoro para Windows. Eliges cuánto tiempo quieres
+            estudiar y planifica los bloques de concentración y los descansos, con lista de tareas,
+            un mini temporizador siempre visible, rachas y logros. Cubierto por tests automáticos.
+          </p>
+          <ul class="stack">
+            <li>JavaScript</li><li>Electron</li><li>Node.js</li><li>Vitest</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/adam-perez25/study_app" target="_blank" rel="noopener">Código en GitHub</a>
+            <a href="https://github.com/adam-perez25/study_app/releases/latest" target="_blank" rel="noopener">Descargar para Windows</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="now-box">
+        <h3>En qué estoy trabajando</h3>
+        <ul class="now">
+          <li><strong>IA para juegos.</strong> Un motor de juegos de tablero en C++ con minimax y MCTS, servido a través de una API en Python.</li>
+          <li><strong>Home lab.</strong> Un pequeño servidor en casa con servicios autoalojados en Docker.</li>
+          <li><strong>Robótica.</strong> Aprendiendo Arduino como primer paso hacia un pequeño robot autónomo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="wrap block">
+      <h2>Sobre mí</h2>
+      <div class="about-grid">
+        <div>
+          <p class="about-intro">
+            Me gusta resolver problemas complejos y entender cómo funcionan las cosas por dentro.
+            En la universidad me centro en la inteligencia artificial y los algoritmos; fuera de ella
+            desarrollo mis propias herramientas y participo en hackatones como UAB The Hack.
+          </p>
+          <h3 class="sub">Formación</h3>
+          <dl class="facts">
+            <dt>Universitat Autònoma de Barcelona</dt>
+            <dd>Ingeniería Informática, mención en Computación<span class="years">2024–2028</span></dd>
+            <dt>Immaculada Concepció, Lloret de Mar</dt>
+            <dd>Bachillerato<span class="years">2022–2024</span></dd>
+          </dl>
+        </div>
+        <div>
+          <h3 class="sub">Habilidades</h3>
+          <ul class="stack">
+            <li>Python</li><li>C++</li><li>JavaScript</li><li>Node.js</li><li>HTML y CSS</li>
+            <li>FastAPI</li><li>Docker</li><li>Git</li><li>Linux</li>
+          </ul>
+          <h3 class="sub">Idiomas</h3>
+          <dl class="facts langs">
+            <dt>Español, catalán</dt><dd>Nativo</dd>
+            <dt>Inglés</dt><dd>C2</dd>
+            <dt>Francés</dt><dd>B1</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="board contact">
+    <div class="wrap">
+      <h2>Hablemos</h2>
+      <p>La forma más fácil de contactar conmigo es por LinkedIn.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://www.linkedin.com/in/adam-perez-pulgarin-26971038b/" target="_blank" rel="noopener">Escríbeme por LinkedIn</a>
+        <a class="btn" href="https://github.com/adam-perez25" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

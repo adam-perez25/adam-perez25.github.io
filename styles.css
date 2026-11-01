@@ -142,6 +142,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1; marg
   letter-spacing: .02em;
 }
 .navlinks a:hover { color: var(--silk); }
+/* the language switch sits apart from the section links */
+.navlinks .lang { padding-left: 28px; border-left: 2px solid var(--mask-trace); }
 
 .hero-body {
   position: relative;
@@ -269,7 +271,8 @@ h2 {
 @media (max-width: 760px) {
   body { font-size: 17px; }
   .wrap { padding: 0 16px; }
-  .navlinks { gap: 18px; }
+  .navlinks { gap: 14px; }
+  .navlinks .lang { padding-left: 14px; }
   .hero { min-height: 0; }
   .hero-body { padding-top: 56px; padding-bottom: 64px; }
   .traces { width: 100%; opacity: .35; }
@@ -278,6 +281,12 @@ h2 {
   .now-box { padding: 24px 20px; }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .contact { padding: 72px 0 80px; }
+}
+
+@media (max-width: 400px) {
+  .navlinks { gap: 10px; }
+  .navlinks a { font-size: 1.05rem; }
+  .navlinks .lang { padding-left: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
