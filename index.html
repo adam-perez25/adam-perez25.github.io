@@ -5,45 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adam Pérez Pulgarín</title>
   <meta name="description" content="Computer Engineering student at UAB (AI and algorithms). Projects in Python, C++ and JavaScript. Looking for an internship in Barcelona.">
+  <meta name="theme-color" content="#1f5a3a">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-row">
-      <a class="logo" href="#top">Adam Pérez</a>
-      <nav>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="board hero" id="top">
+    <svg class="traces" viewBox="0 0 600 420" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+      <g class="lines">
+        <path d="M600 60 H470 L430 100 V180"/>
+        <path d="M600 120 H500 L470 150 V250 L440 280 H360"/>
+        <path d="M600 200 H540 V330 L500 370 H380"/>
+        <path d="M600 300 H560 L520 260 V210"/>
+        <path d="M600 380 H460 L420 340 V300"/>
+        <path d="M330 0 V40 L370 80 H410"/>
+        <path d="M250 420 V380 L290 340 H330"/>
+      </g>
+      <g class="pads">
+        <circle cx="430" cy="180" r="7"/>
+        <circle cx="360" cy="280" r="7"/>
+        <circle cx="380" cy="370" r="7"/>
+        <circle cx="520" cy="210" r="7"/>
+        <circle cx="420" cy="300" r="7"/>
+        <circle cx="410" cy="80" r="7"/>
+        <circle cx="330" cy="340" r="7"/>
+      </g>
+    </svg>
+
+    <nav class="wrap topnav" aria-label="Sections">
+      <a class="logo" href="#top">AP</a>
+      <div class="navlinks">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </nav>
 
-  <main id="top">
-    <section class="hero wrap">
-      <p class="eyebrow">Computer Engineering student · UAB</p>
-      <h1>Adam Pérez Pulgarín</h1>
+    <div class="wrap hero-body">
+      <h1>Adam<br>Pérez Pulgarín</h1>
       <p class="lead">
-        3rd-year student specialising in Computation (AI and algorithms).
-        I build backend services and tools in Python, C++ and JavaScript.
-        Looking for an internship or part-time role in Barcelona, remote or hybrid.
+        Computer Engineering student at UAB, in my 3rd year, specialising in AI and algorithms.
+        I build backend services and tools in Python, C++ and JavaScript, and I’m looking for an
+        internship or part-time role in Barcelona, remote or hybrid.
       </p>
       <div class="buttons">
         <a class="btn primary" href="#projects">See my projects</a>
         <a class="btn" href="https://github.com/adam-perez25" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/adam-perez-pulgarin-26971038b/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section id="projects" class="wrap">
+  <main>
+    <section id="projects" class="wrap block">
       <h2>Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-head">
-            <h3>PDF Toolkit</h3>
-            <span class="tag">Backend</span>
-          </div>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>PDF Toolkit</h3>
+          <p class="tag">Backend</p>
+        </div>
+        <div class="project-body">
           <p>
             A web app for working with documents from the browser: merge, split and
             compress PDFs, reorder and rotate pages, convert images to PDF and back,
@@ -53,15 +80,17 @@
             <li>Python</li><li>FastAPI</li><li>pypdf</li><li>Ghostscript</li><li>LibreOffice</li><li>Docker</li>
           </ul>
           <div class="links">
-            <a href="https://github.com/adam-perez25/pdf_services" target="_blank" rel="noopener">Code on GitHub →</a>
+            <a href="https://github.com/adam-perez25/pdf_services" target="_blank" rel="noopener">Code on GitHub</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card">
-          <div class="card-head">
-            <h3>Study Timer</h3>
-            <span class="tag">Desktop app</span>
-          </div>
+      <article class="project">
+        <div class="project-head">
+          <h3>Study Timer</h3>
+          <p class="tag">Desktop app</p>
+        </div>
+        <div class="project-body">
           <p>
             A pomodoro-style study timer for Windows. You choose how long to study and it
             plans the focus blocks and breaks, with a task list, an always-on-top mini timer,
@@ -71,55 +100,59 @@
             <li>JavaScript</li><li>Electron</li><li>Node.js</li><li>Vitest</li>
           </ul>
           <div class="links">
-            <a href="https://github.com/adam-perez25/study_app" target="_blank" rel="noopener">Code on GitHub →</a>
-            <a href="https://github.com/adam-perez25/study_app/releases/latest" target="_blank" rel="noopener">Download for Windows →</a>
+            <a href="https://github.com/adam-perez25/study_app" target="_blank" rel="noopener">Code on GitHub</a>
+            <a href="https://github.com/adam-perez25/study_app/releases/latest" target="_blank" rel="noopener">Download for Windows</a>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
 
-      <h3 class="sub">Currently working on</h3>
-      <ul class="now">
-        <li><strong>Game AI:</strong> a board game engine in C++ with minimax and MCTS, served through a Python API.</li>
-        <li><strong>Home lab:</strong> a small home server running self-hosted services in Docker.</li>
-        <li><strong>Robotics:</strong> learning Arduino as a first step towards a small autonomous robot.</li>
-      </ul>
+      <div class="now-box">
+        <h3>Currently working on</h3>
+        <ul class="now">
+          <li><strong>Game AI.</strong> A board game engine in C++ with minimax and MCTS, served through a Python API.</li>
+          <li><strong>Home lab.</strong> A small home server running self-hosted services in Docker.</li>
+          <li><strong>Robotics.</strong> Learning Arduino as a first step towards a small autonomous robot.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="about" class="wrap about">
+    <section id="about" class="wrap block">
       <h2>About</h2>
       <div class="about-grid">
         <div>
-          <p>
+          <p class="about-intro">
             I enjoy solving complex problems and understanding how things work underneath.
             At university I focus on artificial intelligence and algorithms; outside it I
             build my own tools and take part in hackathons such as UAB The Hack.
           </p>
           <h3 class="sub">Education</h3>
-          <ul class="plain">
-            <li><strong>Universitat Autònoma de Barcelona</strong> · Computer Engineering, Computation specialisation · 2024–2028</li>
-            <li><strong>Immaculada Concepció, Lloret de Mar</strong> · Bachillerato · 2022–2024</li>
-          </ul>
+          <dl class="facts">
+            <dt>Universitat Autònoma de Barcelona</dt>
+            <dd>Computer Engineering, Computation specialisation<span class="years">2024–2028</span></dd>
+            <dt>Immaculada Concepció, Lloret de Mar</dt>
+            <dd>Bachillerato<span class="years">2022–2024</span></dd>
+          </dl>
         </div>
         <div>
-          <h3 class="sub first">Skills</h3>
+          <h3 class="sub">Skills</h3>
           <ul class="stack">
             <li>Python</li><li>C++</li><li>JavaScript</li><li>Node.js</li><li>HTML &amp; CSS</li>
             <li>FastAPI</li><li>Docker</li><li>Git</li><li>Linux</li>
           </ul>
           <h3 class="sub">Languages</h3>
-          <ul class="plain">
-            <li>Spanish, Catalan · native</li>
-            <li>English · C2</li>
-            <li>French · B1</li>
-          </ul>
+          <dl class="facts langs">
+            <dt>Spanish, Catalan</dt><dd>Native</dd>
+            <dt>English</dt><dd>C2</dd>
+            <dt>French</dt><dd>B1</dd>
+          </dl>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
+  <footer id="contact" class="board contact">
     <div class="wrap">
-      <h2>Contact</h2>
+      <h2>Let’s talk</h2>
       <p>The easiest way to reach me is on LinkedIn.</p>
       <div class="buttons">
         <a class="btn primary" href="https://www.linkedin.com/in/adam-perez-pulgarin-26971038b/" target="_blank" rel="noopener">Message me on LinkedIn</a>
